@@ -1,7 +1,5 @@
- document.getElementById("footer").innerHTML = `
-            <p>&copy; 2023 A.A Mujaheed Global Enterprises. All rights reserved.</p>
-            <p>Developed by: <a href="https://wa.me/+2347046245050">Mahadi Abubakar Mujahid</a></p>
-        `;
+ let footer = document.getElementById("footer").innerHTML = `
+            <p>&copy; 2023 A.A Mujaheed Global Enterprises. All rights reserved.</p><p>Developed by: <a href="https://wa.me/+2347046245050">Mahadi Abubakar Mujahid</a></p>`;
 
         document.getElementById("loginForm").addEventListener('submit', function(event) {
             event.preventDefault();
