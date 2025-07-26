@@ -8,7 +8,7 @@ body{
 }
 .login-container, .reset-container {
     width: 450px;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     margin-top: 80px;
     box-shadow: 0 0 3px rgba(0,0,0,0.1);
@@ -61,11 +61,61 @@ body{
     box-shadow: 0 0 3px rgba(141, 190, 50, 0.685);
     transition: 0.3s;
 }
-a{
+.forgot-password{
     text-decoration: none;
     color: purple;
     font-weight: 650;
     font-size: 14px;
     margin-right: 20px;
     float: right;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #2d2d2d;
+    transition: 0.5s;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7e7d7d;
+    bottom: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    position: fixed;
+}
+footer p {
+    margin: 3px 0;
+    padding: 4px;
+    font-weight: 550;
+    color: #aaa;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+    .login-container {
+        width: 90%;
+        margin-top: 100px;
+        box-shadow: none;
+        border: none;
+    }
+    .brand span {
+        font-size: 14px;
+    }
+    .form-group input {
+        width: 100%;
+        font-size: 16px;
+    }
+    
 }
