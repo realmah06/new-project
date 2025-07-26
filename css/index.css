@@ -83,26 +83,6 @@ body{
     background-color: #2d2d2d;
     transition: 0.5s;
 }
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #7e7d7d;
-    bottom: 0;
-    width: 100%;
-    background-color: #2d2d2d;
-    position: fixed;
-}
-footer p {
-    margin: 3px 0;
-    padding: 4px;
-    font-weight: 550;
-    color: #aaa;
-}
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
 @media screen and (max-width: 500px) {
     .login-container {
         width: 90%;
