@@ -155,11 +155,9 @@ footer a {
             margin: 3px;
         }
         .right-side {
-            width: 70%;
             padding: 10px;
         }
         .left-side {
-            width: 25%;
             padding: 10px;
         }
         .right-side .card{
@@ -167,8 +165,8 @@ footer a {
             margin-bottom: 15px;
             width: 270px;
             border-radius: 10px;
+            margin-right: 15px;
             border: 1px solid #ccc;
-            margin-inline-start: 30px;
             display: inline-block;
     
         }
@@ -242,6 +240,16 @@ footer a {
         .card a{
             text-decoration: none;
         }
+        #showMenu, #hideMenu {
+            display: none;
+            padding: 10px;
+            font-size: 25px;
+            right: 15px;
+            top: 10px;
+            position: fixed;
+            margin-right: 5px;
+            cursor: pointer;
+        }
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -256,4 +264,49 @@ footer a {
     footer {
         font-size: 12px;
     } 
+}
+@media screen and (max-width: 700px) {
+    .dashboard-content {
+        flex-direction: column;
+        width: 94%;
+    }
+    .right-side {
+        width: 100%;
+        margin: 0;
+    }
+    .right-side .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .dashboard-content .side-bar {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+    #showMenu {
+        display: block;
+    }
+    .dashboard-content .main-content {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .dashboard-content .side-bar ul a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .top-header .logout-btn {
+        display: none;
+    }
+    .dashboard-content .side-bar ul a{
+        border-radius: 0;
+        margin: 0;
+    }
+    .tab-content .tab-message{
+        display: none;
+    }
 }

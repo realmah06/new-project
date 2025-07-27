@@ -23,3 +23,18 @@ let footer = document.getElementById("footer").innerHTML = `<p>&copy; 2023 A.A M
                 });
             });
         });
+
+        const sideBar = document.getElementById('sideBar');
+        const showMenu = document.getElementById('showMenu');
+        const hideMenu = document.getElementById('hideMenu');
+
+        showMenu.addEventListener('click', function() {
+            sideBar.style.display = 'block';
+            showMenu.style.display = 'none';
+            hideMenu.style.display = 'inline-block';
+        });
+        hideMenu.addEventListener('click', function() {
+            sideBar.style.display = 'none';
+            showMenu.style.display = 'inline-block';
+            hideMenu.style.display = 'none';
+        });
