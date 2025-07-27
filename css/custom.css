@@ -1,12 +1,13 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-optical-sizing: auto;
     background-color: #fff;
     color: #333;
 }
@@ -19,10 +20,10 @@ footer {
     width: 100%;
     background-color: #2d2d2d;
     position: fixed;
+    padding-top: 5px;
 }
 footer p {
-    margin: 3px 0;
-    padding: 4px;
+    padding: 5px;
     font-weight: 550;
     color: #aaa;
 }
@@ -30,6 +31,227 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+}
+.top-header .brand {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.top-header .brand img.logo {
+    width: 70px;
+    height: 50px;
+}
+.top-header .brand span {
+    font-size: 16px;
+    font-weight: 620;
+    text-shadow: 0 0 1px rgba(12, 87, 55, 0.685);
+    color: #333;
+    margin-left: 10px;
+}
+.top-header .logout-btn {
+    padding: 10px;
+}
+.top-header .logout-btn button {
+    padding: 8px 15px;
+    background: linear-gradient(to right, #075034, #0da369);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.top-header .logout-btn button:hover {
+    background: linear-gradient(to right, #0da369, #075034);
+    transition: 0.7s;
+}
+.dashboard-content {
+    margin-top: 35px;
+    display: flex;
+}
+.dashboard-content .side-bar {
+    width: 200px;
+    height: calc(100vh - 120px);
+    left: 0;
+    background-color: #fff;
+    padding: 10px 20px;    
+}
+.dashboard-content .side-bar input[type="search"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+    font-weight: 580;
+}
+.dashboard-content .side-bar input[type="search"]:focus {
+    box-shadow: 0 0 3px rgba(141, 190, 50, 0.685);
+    transition: 0.3s;
+}
+.dashboard-content .side-bar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.dashboard-content .side-bar ul a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 8px 15px;
+    border-radius: 1rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+.dashboard-content .main-content {
+    flex: 1;
+    padding: 20px;
+    height: calc(100vh - 120px);
+    margin-top: 26px;
+    margin-right: 15px;
+    overflow-y: auto;
+}
+.dashboard-content .side-bar ul a:hover, .dashboard-content .side-bar ul a.active {
+    background: linear-gradient(to right, #042e1e, #0a7a4f);
+    color: #fff;
+    transition: 0.3s;
+}
+.tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .tab-content h3 {
+            color: #2c3e50;
+            padding-bottom: 0px;
+            /* border-bottom: 1px solid #ddd; */
+            margin: 3px;
+        }
+        .tab-message{
+            color: #8f8d8d;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 600;
+            margin-left: 5px;
+            
+        }
+        .tab-content .right-side, .tab-content .left-side {
+            display: inline-block;
+            margin: 3px;
+        }
+        .right-side {
+            width: 70%;
+            padding: 10px;
+        }
+        .left-side {
+            width: 25%;
+            padding: 10px;
+        }
+        .right-side .card{
+            background-color: #fff;
+            margin-bottom: 15px;
+            width: 270px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-inline-start: 30px;
+            display: inline-block;
+    
+        }
+        .card .bank{
+            background: linear-gradient(to right, #053d28, #0f8659);
+        }
+        .card .profit{
+            background: linear-gradient(to right, #7a0a0a, #0a6354);
+        }
+        .right-side .card .card-header{
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .right-side .card .card-header .titles{
+            display: flex;
+            padding-bottom: 10px;
+            align-items: center;
+        }
+        .right-side .card .card-header .titles .icon{
+            background-color: #fff;
+            padding: 10px;
+            color: #067049;
+            border-radius: 15px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+        }
+        .right-side .card .card-header .titles .title-details{
+            margin-left: 15px;
+        }
+        .right-side .card .card-header .titles .title-details h4 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .right-side .card .card-header .titles .title-details small {
+            font-size: 12px;
+            font-weight: 550;
+            color: #c5c2c2;
+        }
+        .right-side .card .card-header .amount{
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            margin: 5px;
+            text-shadow: 0 0 1px rgba(50, 60, 190, 0.685);
+        }
+        .card .card-footer{
+            padding: 5px 12px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: space-between;
+        }
+        .card .card-footer p {
+            font-size: 13px;
+            color: #7e7d7d;
+            font-weight: 600;
+        }
+        .card .card-footer span i {
+            color: #080808;
+            font-size: 15px;
+        }
+        .card a{
+            text-decoration: none;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 @media screen and (max-width: 500px) {
     footer {
         font-size: 12px;
