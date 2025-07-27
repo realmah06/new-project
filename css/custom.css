@@ -85,7 +85,7 @@ footer p {
     color: #aaa;
 }
 footer a {
-    color: #fff;
+    color: #aaa;
     text-decoration: none;
 }
 .top-header {
@@ -212,6 +212,7 @@ footer a {
         }
         .right-side {
             padding: 10px;
+            width: 100%;
         }
         .left-side {
             padding: 10px;
@@ -219,7 +220,7 @@ footer a {
         .right-side .card{
             background-color: #fff;
             margin-bottom: 15px;
-            width: 270px;
+            width: 30%;
             border-radius: 10px;
             margin-right: 15px;
             border: 1px solid #ccc;
