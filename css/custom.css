@@ -11,6 +11,63 @@ body{
     background-color: #fff;
     color: #333;
 }
+.alert-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.alert-text {
+    font-size: 10px;
+    color: red;
+}
+.error-message {
+    color: #000;
+    font-size: 14px;
+    font-weight: 550;
+    background-color: #e73c3c8e;
+    padding: 10px 15px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+.success-message {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 550;
+    background-color: #0da36973;
+    padding: 10px 15px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.question-message {
+    color: #000;
+    font-size: 14px;
+    font-weight: 550;
+    background-color: #b3b2b2;
+    padding: 10px 15px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.confirm-button {
+    background-color: #0da369;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.cancel-button {
+    background-color: #aa1510;
+    color: #fff;
+    font-weight: 550;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
 footer {
     text-align: center;
     margin-top: 20px;
@@ -120,7 +177,6 @@ footer a {
     height: calc(100vh - 120px);
     margin-top: 26px;
     margin-right: 15px;
-    overflow-y: auto;
 }
 .dashboard-content .side-bar ul a:hover, .dashboard-content .side-bar ul a.active {
     background: linear-gradient(to right, #042e1e, #0a7a4f);
@@ -307,6 +363,11 @@ footer a {
         margin: 0;
     }
     .tab-content .tab-message{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .top-header .brand span{
         display: none;
     }
 }

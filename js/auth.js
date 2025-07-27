@@ -10,11 +10,20 @@
                 Swal.fire({
                     icon: 'error',
                     title: 'Something Went Wrong!',
-                    text: 'Please fill in the Username field.',
+                    html: '<div class="error-message">Please fill in the Username field.</div>',
                     cancelButtonText: 'Ok',
                     showCancelButton: true,
                     showConfirmButton: false,
                     cancelButtonColor: 'darkred',
+                    customClass: {
+                        popup: 'my-custom-popup-class',
+                        title: 'alert-title',
+                        confirmButton: 'confirm-button',
+                        cancelButton: 'cancel-button',
+                        text: 'alert-text',
+                        // Other elements you can target:
+                        // container, actions, icon, htmlContainer, etc.
+                    }
                 });
                 return;
             }
@@ -23,11 +32,20 @@
                 Swal.fire({
                     icon: 'error',
                     title: 'Something Went Wrong!',
-                    text: 'Please fill in the Password field.',
+                    html: '<div class="error-message">Please fill in the Password field.</div>',
                     cancelButtonText: 'Ok',
                     showCancelButton: true,
                     showConfirmButton: false,
                     cancelButtonColor: 'darkred',
+                    customClass: {
+                        popup: 'my-custom-popup-class',
+                        title: 'alert-title',
+                        confirmButton: 'confirm-button',
+                        cancelButton: 'cancel-button',
+                        text: 'alert-text',
+                        // Other elements you can target:
+                        // container, actions, icon, htmlContainer, etc.
+                    }
                 });
                 return;
             }
@@ -43,7 +61,7 @@
                 Swal.fire({
                     icon: 'error',
                     title: 'Login Failed!',
-                    text: 'Invalid Username or Password.',
+                    html: '<div class="error-message">Invalid Username or Password.</div>',
                     cancelButtonText: 'Ok',
                     showCancelButton: true,
                     showConfirmButton: false,
@@ -54,7 +72,7 @@
 
             Swal.fire({
                 icon: 'question',
-                title: 'Login to System?',
+                    html: '<div class="question-message">Please fill in the Password field.</div>',
                 showConfirmButton: true,
                 showCancelButton: true,
                 confirmButtonText: 'Login',
