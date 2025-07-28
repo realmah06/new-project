@@ -63,3 +63,58 @@ let footer = document.getElementById("footer").innerHTML = `<p>&copy; 2023 A.A M
 
         // Call the function when the page loads
         window.onload = current;
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all modal triggers
+            const modalTriggers = document.querySelectorAll('li[data-modal]');
+            
+            // Add click event to each trigger
+            modalTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const modalId = this.getAttribute('data-modal') + '-modal';
+                    const modal = document.getElementById(modalId);
+                    
+                    if (modal) {
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            // Close modal when clicking close button or outside
+            document.querySelectorAll('.modal-popup').forEach(modal => {
+                // Close button
+                modal.querySelector('.close-btn').addEventListener('click', function() {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+                
+                // Click outside
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        modal.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+            
+            // Form submission handling
+            document.querySelectorAll('.modal-form').forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const modal = this.closest('.modal-popup');
+                    
+                    // Here you would handle form submission
+                    console.log('Form submitted:', this);
+                    
+                    // For demo purposes, just close the modal
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                    
+                    // Show success message
+                    alert('Form submitted successfully!');
+                });
+            });
+        });

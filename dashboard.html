@@ -162,7 +162,7 @@
                 <h4>Customer Balances on <span class="current-date"></span></h4>
                 <div class="modal-header">
                 <input type="search" name="search-customer" id="search-customer" placeholder="Search Customer...">
-                <button><i class="bi bi-person-add"></i></button>
+                <li data-modal="register-customer"><i class="bi bi-person-add"></i></li>
                 </div>
                 <hr style="border: 1px solid #133338;">
                 <div class="modal-body">
@@ -173,7 +173,7 @@
             <h4>Banks Balances on <span class="current-date"></span></h4>
             <div class="modal-header">
             <input type="search" name="search-bank" id="search-bank" placeholder="Search Banks...">
-            <button><i class="bi bi-bank"></i></button>
+            <li data-modal="register-bank"><i class="bi bi-bank"></i></li>
             </div>
             <hr style="border: 1px solid #133338;">
             <div class="modal-body">
@@ -187,25 +187,43 @@
                 <h4>Expenses Balances on <span class="current-date"></span></h4>
                 <div class="modal-header">
                 <input type="search" name="search-expenses" id="search-expenses" placeholder="Search Expenses...">
-                <button><i class="bi bi-credit-card-2-front"></i></button>
+                <li data-modal="register-expenses"><i class="bi bi-credit-card-2-front"></i></li>
                 </div>
                 <hr style="border: 1px solid #133338;">
                 <div class="modal-body">
-                <h4>No More Customer is Available at this Moment!</h4>
+                <h4>No More Expenses is Available at this Moment!</h4>
             </div>
         </div>
          <div class="modal">
-            <h4>Banks Balances on <span class="current-date"></span></h4>
+            <h4>House Suppliers Balances on <span class="current-date"></span></h4>
             <div class="modal-header">
-            <input type="search" name="search-bank" id="search-bank" placeholder="Search Banks...">
-            <button><i class="bi bi-bank"></i></button>
+            <input type="search" name="search-house-suppliers" id="search-house-suppliers" placeholder="Search House Suppliers...">
+            <li data-modal="register-houseSupplier"><i class="bi bi-person-workspace"></i></li>
             </div>
             <hr style="border: 1px solid #133338;">
             <div class="modal-body">
-               <h4>No More Bank is Available at this Moment!</h4>
+               <h4>No More House Suppliers is Available at this Moment!</h4>
            </div>
         </div>
            </div>
+
+           <!-- Expense Modal -->
+    <div class="modal-popup" id="register-expenses-modal">
+        <div class="popup-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Register New Expense</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="expense-name">Expense Name</label>
+                    <input type="text" id="expense-name" required>
+                </div>
+                <!-- Add more expense-specific fields -->
+                <button type="submit" class="submit-btn">Register Expense</button>
+            </form>
+        </div>
+    </div>
         
            </div>
         
