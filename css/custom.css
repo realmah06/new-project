@@ -437,8 +437,8 @@ footer a {
             .tab-content .modal .modal-header{
                 display: block;
             }
-            .tab-content .modal .modal-header button {
-                width: 96%;
+            .tab-content .modal .modal-header li {
+                width: 90%;
                 border-radius: 0;
                 margin-bottom: 10px;
             }
