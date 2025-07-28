@@ -38,3 +38,28 @@ let footer = document.getElementById("footer").innerHTML = `<p>&copy; 2023 A.A M
             showMenu.style.display = 'inline-block';
             hideMenu.style.display = 'none';
         });
+
+        // Function to format the date as DD/MM/YYYY
+        function formatDate(date) {
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        // Function to update all spans with class "current-date"
+        function current() {
+            const today = new Date();
+            const formattedDate = formatDate(today);
+            
+            // Get all spans with the class "current-date"
+            const dateSpans = document.querySelectorAll('span.current-date');
+            
+            // Update each span with the current date
+            dateSpans.forEach(span => {
+                span.textContent = formattedDate;
+            });
+        }
+
+        // Call the function when the page loads
+        window.onload = current;

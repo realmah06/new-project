@@ -132,7 +132,12 @@ footer a {
 }
 .dashboard-content {
     margin-top: 35px;
+    width: 100%;
     display: flex;
+    height: 85vh;
+    scrollbar-width: none;
+    margin-bottom: 20px;
+    overflow: scroll;
 }
 .dashboard-content .side-bar {
     width: 200px;
@@ -172,7 +177,7 @@ footer a {
     font-weight: 600;
 }
 .dashboard-content .main-content {
-    flex: 1;
+    width: 90%;
     padding: 20px;
     height: calc(100vh - 120px);
     margin-top: 26px;
@@ -186,6 +191,10 @@ footer a {
 .tab-content {
             display: none;
             animation: fadeIn 0.5s ease;
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scrollbar-width: none       ;
         }
         
         .tab-content.active {
@@ -206,8 +215,7 @@ footer a {
             margin-left: 5px;
             
         }
-        .tab-content .right-side, .tab-content .left-side {
-            display: inline-block;
+        .tab-content .right-side {
             margin: 3px;
         }
         .right-side {
@@ -226,6 +234,9 @@ footer a {
             border: 1px solid #ccc;
             display: inline-block;
     
+        }
+        .card .sales{
+            background: linear-gradient(to right, #0c2c83, #437e88);
         }
         .card .bank{
             background: linear-gradient(to right, #053d28, #0f8659);
@@ -307,6 +318,104 @@ footer a {
             margin-right: 5px;
             cursor: pointer;
         }
+        .tab-content .modal-head {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 5px;
+        }
+        .tab-content .modal-head button {
+            padding: 8px 15px;
+            background: linear-gradient(to right, #249797, rgb(124, 87, 17));
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tab-content .modal-head button:hover {
+            background: linear-gradient(to right, #0a7a4f, rgb(66, 47, 11));
+            transition: 0.7s;
+        }
+        .tab-content .modal {
+            padding: 10px;
+            background-color: #fff;
+        }
+        .tab-content .modal input{
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 3px;
+            font-size: 14px;
+            background-color: #fff;
+            outline: none;
+            min-width: 300px;
+            font-weight: 580;
+        }
+        .tab-content .modal .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .tab-content .modal .modal-header button {
+            padding: 7px 12px;
+            background-color: #182425;
+            color: #fff;
+            font-weight: 600;
+            margin-right: 10px;
+            font-size: 20px;
+            width: 60px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tab-content .modal .modal-body{
+            height: 40vh;
+            scrollbar-width: none;
+            overflow: scroll;
+            align-content: center;
+        }
+        #ledger .row{
+            display: flex;
+            justify-content: space-between;
+        }
+        #ledger .row .modal{
+            margin: 10px;
+            width: 45%;
+        }
+        .tab-content .modal .modal-body h4{
+            font-size: 22px;
+            font-weight: 700;
+            color: red;
+            cursor: pointer;
+            text-align: center;
+            align-content: center;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 450px) {
+            .tab-content .modal .modal-header{
+                display: block;
+            }
+            .tab-content .modal .modal-header button {
+                width: 96%;
+                border-radius: 0;
+                margin-bottom: 10px;
+            }
+            .tab-content .modal .modal-header input{
+                width: 96%;
+            }
+        }
+        @media screen and (max-width: 1130px) {
+           #ledger .row {
+                flex-direction: column;
+            }
+            #ledger .row .modal {
+                width: 100%;
+                margin: 5px 0;
+            } 
+        }
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -334,6 +443,9 @@ footer a {
     .right-side .card {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .dashboard-content{
+       
     }
     .dashboard-content .side-bar {
         width: 95%;

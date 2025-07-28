@@ -26,11 +26,11 @@
             <!-- <input type="search" name="search" id="search" placeholder="Search..."> -->
         <br>
         <ul>
-            <a href="#" class="active" data-tab="dashboard">
+            <a href="#"  data-tab="dashboard">
                 <span><i class="bi bi-houses-fill"></i></span> &nbsp;
                 <li>Dashboard</li>
             </a>
-            <a href="#" data-tab="ledger">
+            <a href="#" class="active" data-tab="ledger">
                 <span><i class="bi bi-cash-coin"></i></span> &nbsp;
                 <li>Business Ledger</li>
             </a>
@@ -66,7 +66,7 @@
         </div>
         <div class="main-content">
             <!-- Dashboard Tab -->
-        <div id="dashboard" class="tab-content active">
+        <div id="dashboard" class="tab-content">
             <h3><i class="bi bi-houses-fill"></i> Dashboard Overview</h3>
             <!--<p class="tab-message">Welcome to your business management dashboard.</p>
             <hr style="margin-top: 5px;border: 1px solid #ddd;"> -->
@@ -117,7 +117,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-header profit">
+                        <div class="card-header sales">
                             <div class="titles">
                                 <div class="icon"><span><i class="bi bi-cart4"></i></span></div>
                                 <div class="title-details">
@@ -138,6 +138,10 @@
                     </div>
 
                 </div>
+
+                <div class="chart">
+                    
+                </div>
                 <!--
                 <div class="left-side">
                     
@@ -147,11 +151,63 @@
         </div>
         
         <!-- Business Ledger Tab -->
-        <div id="ledger" class="tab-content">
-            <h2><i class="bi bi-cash-coin"></i> Business Ledger</h2>
-            <p class="small">Manage all your financial transactions in one place. Track income, expenses, and maintain accurate records for accounting purposes.</p>
-            <p class="small">Use filters to view specific time periods or transaction types for better financial analysis.</p>
+        <div id="ledger" class="tab-content active">
+            <h3><i class="bi bi-cash-coin"></i> &nbsp; Business Ledger</h2>
+           <div class="modal-head">
+                <button class="export-balances">Export to PDF</button>
+           </div>
+           <br>
+           <div class="row">
+            <div class="modal">
+                <h4>Customer Balances on <span class="current-date"></span></h4>
+                <div class="modal-header">
+                <input type="search" name="search-customer" id="search-customer" placeholder="Search Customer...">
+                <button><i class="bi bi-person-add"></i></button>
+                </div>
+                <hr style="border: 1px solid #133338;">
+                <div class="modal-body">
+                <h4>No More Customer is Available at this Moment!</h4>
+            </div>
         </div>
+         <div class="modal">
+            <h4>Banks Balances on <span class="current-date"></span></h4>
+            <div class="modal-header">
+            <input type="search" name="search-bank" id="search-bank" placeholder="Search Banks...">
+            <button><i class="bi bi-bank"></i></button>
+            </div>
+            <hr style="border: 1px solid #133338;">
+            <div class="modal-body">
+               <h4>No More Bank is Available at this Moment!</h4>
+           </div>
+        </div>
+           </div>
+
+             <div class="row">
+            <div class="modal">
+                <h4>Expenses Balances on <span class="current-date"></span></h4>
+                <div class="modal-header">
+                <input type="search" name="search-expenses" id="search-expenses" placeholder="Search Expenses...">
+                <button><i class="bi bi-credit-card-2-front"></i></button>
+                </div>
+                <hr style="border: 1px solid #133338;">
+                <div class="modal-body">
+                <h4>No More Customer is Available at this Moment!</h4>
+            </div>
+        </div>
+         <div class="modal">
+            <h4>Banks Balances on <span class="current-date"></span></h4>
+            <div class="modal-header">
+            <input type="search" name="search-bank" id="search-bank" placeholder="Search Banks...">
+            <button><i class="bi bi-bank"></i></button>
+            </div>
+            <hr style="border: 1px solid #133338;">
+            <div class="modal-body">
+               <h4>No More Bank is Available at this Moment!</h4>
+           </div>
+        </div>
+           </div>
+        
+           </div>
         
         <!-- Transactions Tab -->
         <div id="transactions" class="tab-content">
