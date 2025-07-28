@@ -233,7 +233,6 @@ footer a {
             margin-right: 15px;
             border: 1px solid #ccc;
             display: inline-block;
-    
         }
         .card .sales{
             background: linear-gradient(to right, #0c2c83, #437e88);
@@ -453,6 +452,10 @@ footer a {
                 width: 100%;
                 margin: 5px 0;
             } 
+            .right-side .card{
+                width: 47%;
+            }
+
         }
         @keyframes fadeIn {
             from {
