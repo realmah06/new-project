@@ -431,6 +431,7 @@ footer a {
         .modal-popup.active .popup-container {
             transform: translateY(0);
         }
+        
         @media screen and (max-width: 450px) {
             .tab-content .modal .modal-header{
                 display: block;

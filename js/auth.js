@@ -98,7 +98,7 @@
                         showConfirmButton: true,
                         confirmButtonColor: '#276dc9',
                     }).then(() => {
-                        window.location.href = 'dashboard.html';
+                        window.location.href = 'admin.html';
                     });
                 }
             });
