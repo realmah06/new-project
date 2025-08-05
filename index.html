@@ -11,32 +11,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="brand">
-            <img src="images/logo.jpg" alt="logo" class="logo">
-            <span>A.A Mujaheed Global Enterprises</span>
-        </div>
-        <hr style="margin: 8px;border: 1px solid maroon;">
-        <br><br>
-        <h2>Login</h2>
-        <small>Please login to continue to your account.</small>
-        <br><br>
+   <div class="login-form">
+        <center><img src="images/logo.jpg" alt="logo">
+        <h1>A A Mujaheed Global Enterprises</h1>
+        <small><em>Specialized on Sales & Supply of: Maize, Fertilizer, Soya Beans, Agro-Chemicals, etc.</em></small>
+        <hr style="border: 1px solid darkgreen;">
+        </center>
+        <br>
         <form id="loginForm">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter your Username">
+                <input type="text" name="username" id="username" placeholder="Username">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter your Password">
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
-            <a href="https://wa.me/+2348069594220?hi" class="forgot-password">Forgot Password?</a>
-            <br><br>
+            <input type="checkbox"> <span>Keep me logged in</span> <a class="forgot" href="#">Reset my Password?</a>
+            <br>
             <div class="form-group">
-                <button type="submit">Login</button>
+                <center>
+                    <button type="submit">Sign In</button>
+                </center>
             </div>
         </form>
-    </div>
+   </div>
     <footer id="footer"></footer>
     <!-- Include Auth JavaScript -->
     <script src="js/auth.js"></script>

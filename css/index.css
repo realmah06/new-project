@@ -1,110 +1,79 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.reset-container{
-    display: none;
-}
-.login-container, .reset-container {
-    width: 450px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-top: 80px;
-    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+.login-form{
+    width: 650px;
     background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    margin-top: 50px;
+    border-radius: 3px;
 }
-.login-container img.logo {
-    width: 60px;
-    height: 40px;
-    border-radius: 50%;
+.login-form img{
+    height: 120px;
+    width: 160px;
+    margin: 7px 0;
+    mix-blend-mode: multiply;
 }
-.brand {
-    text-align: left;
-    align-items: center;
-    display: flex;
+.login-form h1{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 4px;
+    color: darkred;
 }
-.brand span {
-    font-size: 15px;
-    font-weight: 650;
-    color: #333;
-    text-shadow: 0 0 1px rgba(50, 60, 190, 0.685);
-}
-.login-container h2 {
+.login-form small{
+    font-size: 14px;
+    font-weight: 550;
+    text-align: center;
     margin: 7px;
 }
-.login-container small{
-    margin-left: 7px;
-    color: #7e7d7d;
-    font-size: 13px;
-}
-.form-group {
+.form-group{
+    padding: 5px;
     margin: 5px;
 }
-.form-group label {
+.form-group label{
     display: block;
-    margin: 5px;
-    font-size: 15px;
-    font-weight: 600;
-}
-.form-group input {
-    width: 400px;
-    margin-left: 6px;
-    margin-right: 10px;
+    margin: 3px 0;
     font-size: 17px;
     font-weight: 550;
-    outline: none;
-    padding: 10px 13px;
+}
+.form-group input{
+    padding: 8px 15px;
+    font-size: 17px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 15px;
+    width: 94%;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 550;
 }
-.form-group input:focus {
-    box-shadow: 0 0 3px rgba(141, 190, 50, 0.685);
-    transition: 0.3s;
-}
-.forgot-password{
-    text-decoration: none;
-    color: purple;
-    font-weight: 650;
-    font-size: 14px;
-    margin-right: 20px;
-    float: right;
-}
-.form-group button {
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    border-radius: 4px;
-    background-color: #1b1b1b;
-    color: white;
-    font-size: 16px;
+input[type="checkbox"]{
+    margin-left: 12px;
     cursor: pointer;
 }
-.form-group button:hover {
-    background-color: #2d2d2d;
-    transition: 0.5s;
+span{
+    font-size: 15px;
+    color: darkgreen;
+    font-weight: 550;
 }
-@media screen and (max-width: 500px) {
-    .login-container {
-        width: 80%;
-        margin-top: 100px;
-        margin-left: -15px;
-        box-shadow: none;
-        border: none;
-    }
-    .brand span {
-        font-size: 14px;
-    }
-    .form-group input {
-        width: 100%;
-        font-size: 16px;
-    }
-    .form-group input{
-        margin-left: 0;
-    }
-    .forgot-password{
-        margin: 0;
-        float: right;
-    }
+.forgot{
+    text-decoration: none;
+    float: right;
+    font-size: 15px;
+    font-weight: 550;
+    color: red;
+    margin-right: 15px;
+}
+.form-group button{
+    padding: 5px 12px;
+    border: none;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #fff;
+    background: linear-gradient(to right, #0b3b19, #07864b);
+    width: 90%;
+    border-radius: 7px;
+    cursor: pointer;
 }
