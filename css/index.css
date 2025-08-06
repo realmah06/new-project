@@ -112,13 +112,17 @@ span {
 .btn{
     padding: 10px 20px;
     font-size: 16px;
+    margin-inline-start: 20px;
     font-weight: 650;
 }
 .btn-success{
     background-color: #075e91;
 }
+.btn-success:hover{
+    background-color: #0a344d;
+}
 .btn-danger{
-    background-color: #a11d1d;
+    background-color: #cc1717;
 }
 .alert-message{
     color: rgb(33, 54, 33);
