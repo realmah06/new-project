@@ -4,7 +4,7 @@
     const adminUser = {
         username: 'realmah06',
         password: '4787@',
-        role: 'ADMINISTRATOR', // Add this line
+        role: 'ADMINISTRATOR',
         fullname: 'MAHADI ABUBAKAR MUJAHID'
     };
 
@@ -102,7 +102,7 @@
           icon: 'success',
           html: `<p class="title-alert">Congratulations</p>`,
           text: 'Welcome back to ADMIN Dashboard',
-          timer: 3000,
+        //   timer: 3000,
           showConfirmButton: true,
           customClass: {
                     confirmButton: 'btn btn-success',
