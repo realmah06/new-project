@@ -1,0 +1,34 @@
+.nav-bar{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar .brand{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.nav-bar .brand img{
+    height: 70px;
+    width: 100px;
+    mix-blend-mode: multiply;
+}
+.nav-bar .logout{
+    padding: 5px;
+    margin-right: 15px;
+}
+.nav-bar .logout button{
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: #0b0b0b;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.nav-bar .logout button:hover {
+    background-color: #333;
+    color: #e0e0e0;
+}
