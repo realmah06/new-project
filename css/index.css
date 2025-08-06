@@ -1,64 +1,82 @@
-body{
-    display: flex;
-    justify-content: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.login-form{
-    width: 650px;
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-form {
+    width: 550px;
     background-color: #fff;
     padding: 10px 15px;
     border: 1px solid #eee;
     border-radius: 7px;
     margin-top: 50px;
-    border-radius: 5px;
 }
-.login-form img{
+
+.login-form img {
     height: 120px;
     width: 160px;
     margin: 7px 0;
     mix-blend-mode: multiply;
 }
-.login-form h1{
+
+.login-form h1 {
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
     margin: 4px;
     color: darkred;
 }
-.login-form small{
+
+.login-form small {
     font-size: 14px;
     font-weight: 550;
     text-align: center;
     margin: 7px;
 }
-.form-group{
+
+.form-group {
     padding: 5px;
     margin: 5px;
 }
-.form-group label{
+
+.form-group label {
     display: block;
     margin: 3px 0;
     font-size: 17px;
     font-weight: 550;
 }
-.form-group input{
+
+.form-group input {
     padding: 8px 15px;
     font-size: 17px;
     border: 1px solid #ccc;
-    width: 94%;
+    width: 100%;
     outline: none;
     border-radius: 5px;
     font-weight: 550;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     margin-left: 12px;
     cursor: pointer;
 }
-span{
+
+span {
     font-size: 15px;
     color: darkgreen;
     font-weight: 550;
 }
-.forgot{
+
+.forgot {
     text-decoration: none;
     float: right;
     font-size: 15px;
@@ -66,18 +84,25 @@ span{
     color: red;
     margin-right: 15px;
 }
-.form-group button{
+
+.form-group button {
     padding: 8px 12px;
     border: none;
     margin-top: 20px;
     font-size: 17px;
     color: #fff;
     background: linear-gradient(to right, #0b3b19, #07864b);
-    width: 90%;
+    width: 100%;
     border-radius: 7px;
     cursor: pointer;
+    transition: background 0.7s ease;
 }
-.form-group button:hover{
+
+.form-group button:hover {
     background: linear-gradient(to right, #07864b, #0b3b19);
-    transition: 0.7s;
+}
+@media screen and (max-width: 530px) {
+    .login-form{
+        border: none;
+    }
 }
