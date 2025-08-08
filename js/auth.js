@@ -15,8 +15,8 @@
         if(username === ''){
             Swal.fire({
                 icon: 'warning',
-                html: `<p class="title-alert">Missing Field!</p>`,
-                html: `<p class="alert-message">Sorry!, Fill in the Username Field</p>`,
+                title: 'Missing Field!',
+                html: `<p class="alert-message">Sorry! Fill in the Username Field</p>`,
                 customClass: {
                     confirmButton: 'btn btn-success',
                     cancelButton: 'btn btn-danger',
@@ -100,7 +100,7 @@
       if (result.isConfirmed) {
         Swal.fire({
           icon: 'success',
-          html: `<p class="title-alert">Congratulations</p>`,
+          title: 'Congratulations',
           text: 'Welcome back to ADMIN Dashboard',
         //   timer: 3000,
           showConfirmButton: true,

@@ -1,0 +1,56 @@
+.top-header{
+    background-color: #525151;
+    color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.top-header .logo{
+    padding: 5px 7px;
+    cursor: pointer;
+    display: flex;
+}
+.top-header .logo img{
+    height: 50px;
+    mix-blend-mode: color-burn;
+    color: #fff;
+    width: 80px;
+}
+.top-header .search-bar{
+    padding: 10px;
+}
+.top-header .search-bar input{
+    padding: 8px 12px;
+    font-size: 17px;
+    font-weight: 550;
+    border: 3px solid #706f6f;
+    outline: none;
+    background-color: #525151;
+    color: #fff;
+    width: 300px;
+    border-radius: 5px;
+}
+.top-header .search-bar input:focus{
+    border: 3px solid #f0f0f0;
+}
+.top-header .brand{
+    padding: 10px;
+    cursor: pointer;
+}
+.top-header .brand p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.top-header .asset-report{
+    margin-right: 10px;
+    padding: 7px;
+    cursor: pointer;
+}
+.top-header .asset-report i{
+    font-size: 25px;
+}
