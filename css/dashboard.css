@@ -1,5 +1,5 @@
 .top-header{
-    background-color: #525151;
+    background-color: #333333;
     color: #fff;
     top: 0;
     left: 0;
@@ -28,29 +28,61 @@
     padding: 8px 12px;
     font-size: 17px;
     font-weight: 550;
-    border: 3px solid #706f6f;
     outline: none;
-    background-color: #525151;
+    background-color: #333333;
     color: #fff;
     width: 300px;
-    border-radius: 5px;
-}
-.top-header .search-bar input:focus{
-    border: 3px solid #f0f0f0;
+    border: none;
 }
 .top-header .brand{
     padding: 10px;
+    margin-right: 20px;
     cursor: pointer;
 }
 .top-header .brand p{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
 }
 .top-header .asset-report{
     margin-right: 10px;
     padding: 7px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 .top-header .asset-report i{
     font-size: 25px;
+}
+.side-bar{
+    width: 230px;
+    padding: 7px;
+    max-height: 80vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.side-bar ul{
+    list-style: none;
+}
+.side-bar ul li, .side-bar summary{
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 7px 12px;
+}
+.side-bar ul li.active, .side-bar ul li:hover, .side-bar summary:hover, .side-bar summary:active{
+    background-color: rgb(5, 84, 153);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 7px;
+}
+.side-bar details summary{
+    list-style: none;
+}
+.side-bar details summary .bi-caret-down-fill{
+    float: right;
+}
+.side-bar details ul li{
+    margin-left: 25px;
 }
