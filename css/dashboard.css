@@ -1,88 +1,42 @@
-.top-header{
-    background-color: #333333;
-    color: #fff;
+.side-bar{
+    width: 100px;
+    border-right: 3px solid #eee;
+    display: flex;
+    align-items: center;
     top: 0;
     left: 0;
-    right: 0;
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    bottom: 0;
+    position: fixed;
+    flex-direction: column;
 }
-.top-header .logo{
-    padding: 5px 7px;
-    cursor: pointer;
-    display: flex;
+.side-bar .logo{
+    padding: 5px;
+    margin-top: 7px;
 }
-.top-header .logo img{
-    height: 50px;
-    mix-blend-mode: color-burn;
-    color: #fff;
-    width: 80px;
+.side-bar .logo img{
+    height: 70px;
+    width: 90px;
 }
-.top-header .search-bar{
-    padding: 10px;
-}
-.top-header .search-bar input{
-    padding: 8px 12px;
-    font-size: 17px;
-    font-weight: 550;
-    outline: none;
-    background-color: #333333;
-    color: #fff;
-    width: 300px;
-    border: none;
-}
-.top-header .brand{
-    padding: 10px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-.top-header .brand p{
-    font-size: 17px;
-    font-weight: 600;
-}
-.top-header .asset-report{
-    margin-right: 10px;
+.side-bar .lists{
     padding: 7px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
 }
-.top-header .asset-report i{
+.side-bar .lists a{
+    text-decoration: none;
+    color: #000;
     font-size: 25px;
-}
-.side-bar{
-    width: 230px;
-    padding: 7px;
-    max-height: 80vh;
-    overflow: scroll;
-    scrollbar-width: none;
-}
-.side-bar ul{
-    list-style: none;
-}
-.side-bar ul li, .side-bar summary{
-    font-size: 16px;
-    margin: 5px;
-    font-weight: 550;
-    cursor: pointer;
+    display: block;
+    padding: 5px 10px;
     transition: 0.5s;
-    padding: 7px 12px;
+    border-radius: 20rem;
+    margin-top: 5px;
 }
-.side-bar ul li.active, .side-bar ul li:hover, .side-bar summary:hover, .side-bar summary:active{
-    background-color: rgb(5, 84, 153);
+.side-bar .lists a:hover, .side-bar .lists a.active{
+    background-color: #086d8b;
+    transition: 0.5s;
     color: #fff;
-    transition: 0.5s;
-    border-radius: 7px;
 }
-.side-bar details summary{
-    list-style: none;
-}
-.side-bar details summary .bi-caret-down-fill{
-    float: right;
-}
-.side-bar details ul li{
-    margin-left: 25px;
+.side-bar .lists .lists-footer{
+    bottom: 35px;
+    position: absolute;
+    border-top: 3px solid darkred;
 }
