@@ -5,8 +5,10 @@
     align-items: center;
     top: 0;
     left: 0;
+    z-index: 1;
     bottom: 0;
     position: fixed;
+    background-color: #fff;
     flex-direction: column;
 }
 .side-bar .logo{
@@ -39,4 +41,83 @@
     bottom: 35px;
     position: absolute;
     border-top: 3px solid darkred;
+}
+.tab-content {
+    display: none;
+    padding: 10px;
+    background: white;
+    margin-top: 15px
+}
+.tab-content.active {
+    display: block;
+}
+.main{
+    margin-left: 99px;
+    padding: 10px 20px;
+    width: calc(100%-10px);
+}
+.main .header{
+    border-bottom: 1px solid #ddd;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.main .header .hello{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+.main .header .hello .profile-img{
+    font-size: 30px;
+    margin-right: 15px;
+}
+.main .header .hello small{
+    color: #686767;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.main .header input{
+    padding: 7px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    outline: none;
+}
+.main .tab-content h2{
+    color: #086d8b;
+}
+.main .tab-content .row{
+    display: flex;
+}
+.main .tab-content .row .item{
+    min-width: 300px;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    margin: 7px;
+}
+.main .tab-content .row .item .item-header{
+    background: linear-gradient(to right, #0d462a, #077e50);
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.main .tab-content .row .item .item-body{
+    padding: 10px 15px;
+    text-align: center;
+    margin: 5px;
+}
+.main .tab-content .row .item .item-footer{
+    
+}
+.main .tab-content .row .item .item-footer a{
+    text-decoration: none;
+    color: #000;
+    float: right;
+    margin-right: 7px;
+    
+    font-weight: 600;
 }

@@ -15,21 +15,119 @@
         </div>
         <br>
         <div class="lists">
-            <a href="#" class="active" title="Dashboard"><i class="bi bi-house-fill"></i></a>
-            <a href="#" title="Ledger Balances"><i class="bi bi-people"></i></a>
-            <a href="#" title="Investmwnt"><i class="bi bi-bar-chart"></i></a>
-            <a href="#" title="Accounting"><i class="bi bi-bank"></i></a>
-            <a href="#" title="Fertilizer Chain"><i class="bi bi-airplane-engines"></i></a>
-            <a href="#" title="Grain Chain"><i class="bi bi-rocket"></i></a>
-            <a href="#" title="Inventory Adjustment"><i class="bi bi-capslock"></i></a>
-            <a href="#" title="Journal"><i class="bi bi-journals"></i></a>
-            <a href="#" title="Report"><i class="bi bi-cloud-moon"></i></a>
+             <a href="#" class="active" data-tab="dashboard" title="Dashboard"><i class="bi bi-house-fill"></i></a>
+            <a href="#" data-tab="ledger" title="Ledger Balances"><i class="bi bi-people"></i></a>
+            <a href="#" data-tab="investment" title="Investment"><i class="bi bi-bar-chart"></i></a>
+            <a href="#" data-tab="accounting" title="Accounting"><i class="bi bi-bank"></i></a>
+            <a href="#" data-tab="fertilizer" title="Fertilizer Chain"><i class="bi bi-airplane-engines"></i></a>
+            <a href="#" data-tab="grain" title="Grain Chain"><i class="bi bi-rocket"></i></a>
+            <a href="#" data-tab="inventory" title="Inventory Adjustment"><i class="bi bi-capslock"></i></a>
+            <a href="#" data-tab="journal" title="Journal"><i class="bi bi-journals"></i></a>
+            <a href="#" data-tab="report" title="Report"><i class="bi bi-cloud-moon"></i></a>
             <div class="lists-footer">
                 <a href="#" title="Settingd"><i class="bi bi-gear"></i></a>
                 <a href="#" title="Logout"><i class="bi bi-power"></i></a>
             </div>
         </div>
     </div>
+    <div class="main">
+        <div class="header">
+            <div class="hello">
+                <div class="profile-img" id="profile-img"><i class="bi bi-person-circle"></i></div>
+                <div class="info-list">
+                    <h4><i>Hello,</i> MAHADI ABUBAKAR MUJAHID</h4>
+                    <small>A A MUJAHEED GLOBAL ENTERPRISES</small>
+                </div>
+            </div>
+            <input type="search" name="search" id="search" placeholder="Search...">
+        </div>
+        <!-- Tab Contents -->
+        <div id="dashboard" class="tab-content active">
+            <h2><i class="bi bi-house-fill"></i> Overview</h2>
+            <br>
+            <!-- <div class="row">
+                <div class="item">
+                    <div class="item-header">
+                        <i class="bi bi-bank"></i>
+                        <span>Available Balance</span>
+                    </div>
+                    <div class="item-body">
+                        <h1>0.00</h1>
+                    </div>
+                     <div class="item-footer">
+                        <a href="#">
+                            <span>View</span>
+                        </a>
+                    </div> 
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <i class="bi bi-bank"></i>
+                        <span>Available Balance</span>
+                    </div>
+                    <div class="item-body">
+                        <h1>0.00</h1>
+                    </div>
+                     <div class="item-footer">
+                        <a href="#">
+                            <span>View</span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="ledger" class="tab-content">
+            <h2>Ledger Balances</h2>
+            <p>Here are your ledger balances.</p>
+        </div>
+        <div id="investment" class="tab-content">
+            <h2>Investment</h2>
+            <p>Track your investments here.</p>
+        </div>
+        <div id="accounting" class="tab-content">
+            <h2>Accounting</h2>
+            <p>View and manage your accounting records.</p>
+        </div>
+        <div id="fertilizer" class="tab-content">
+            <h2>Fertilizer Chain</h2>
+            <p>Manage fertilizer supply chain data.</p>
+        </div>
+        <div id="grain" class="tab-content">
+            <h2>Grain Chain</h2>
+            <p>Manage grain supply chain data.</p>
+        </div>
+        <div id="inventory" class="tab-content">
+            <h2>Inventory Adjustment</h2>
+            <p>Adjust your inventory records.</p>
+        </div>
+        <div id="journal" class="tab-content">
+            <h2>Journal</h2>
+            <p>View your journal entries.</p>
+        </div>
+        <div id="report" class="tab-content">
+            <h2>Report</h2>
+            <p>Generate and view reports.</p>
+        </div>
+    </div>
     <script src="js/custom.js"></script>
+<script>
+    const tabs = document.querySelectorAll('.lists a');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+
+            // Add active class to clicked tab and related content
+            tab.classList.add('active');
+            document.getElementById(tab.dataset.tab).classList.add('active');
+        });
+    });
+</script>
 </body>
 </html>
